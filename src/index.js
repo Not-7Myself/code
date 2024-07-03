@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<Events />}></Route>
+        <Route path="/" element={<Team />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>

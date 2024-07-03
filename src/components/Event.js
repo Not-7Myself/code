@@ -1,3 +1,6 @@
+import Discord from "../icons/Discord";
+import Mail from "../icons/Mail";
+
 export default function Event() {
   return (
     <div className="box">
@@ -23,10 +26,11 @@ export default function Event() {
           <br /> 8 shortlisted teams will be asked to present their applications
           and answer questions regarding it, on the day of event
         </p>
-        <h2>Contact:</h2> <br />
-        <p>
-          Amaan Elahi: _notmyself <br />
-          Siddhant Mishra: zekernZ
+        <br />
+        {/*<h2>Contact:</h2> */}
+        <p className="contact">
+          <Discord /> _notmyself / zekernZ &emsp; <Mail />{" "}
+          HackAIthon24@gmail.com
         </p>
       </div>
     </div>

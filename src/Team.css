@@ -39,6 +39,13 @@ code {
 }
 .team {
   text-align: center;
+  background-image: url(../public/images/Bg.png);
+  background-size: 15%;
+  background-blend-mode: var(--dhover1);
+
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 20px;
 }
 .team h1 {
   margin-top: 40px;
@@ -64,5 +71,5 @@ code {
 .card h1 {
   margin: 0;
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 28px;
 }
