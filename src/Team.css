@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/westminster");
+
+:root {
+  /*Dark Mode*/
+  --dbg: rgb(9, 1, 15);
+  --dfont1: #fff;
+  --dfont2: rgba(196, 120, 255, 0.6);
+  --dfont3: rgba(225, 196, 247, 0.6);
+  --dhover1: #c177fa;
+}
+body {
+  font-family: "Orbitron", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dbg);
+  color: var(--dfont1);
+
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-height: 100vh;
+  margin-top: -20px;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+code {
+  font-family: "Orbitron", sans-serif;
+}
+.container {
+  background-size: 160%;
+}
+.team {
+  text-align: center;
+}
+.team h1 {
+  margin-top: 40px;
+}
+.P,
+.VP,
+.D {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: rgb(20, 1, 35);
+  width: 16vw;
+  margin: 30px 60px;
+  padding-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(48, 4, 69, 0.19);
+}
+.card img {
+  width: 75%;
+  border-radius: 10px;
+}
+.card h1 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 24px;
+}

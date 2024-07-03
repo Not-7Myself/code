@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/westminster");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /*Dark Mode*/
+  --dbg: rgb(9, 1, 15);
+  --dfont1: #fff;
+  --dfont2: rgba(196, 120, 255, 0.6);
+  --dfont3: rgba(225, 196, 247, 0.6);
+  --dhover1: #c177fa;
+}
+body {
+  font-family: "Orbitron", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dbg);
+  color: var(--dfont1);
+
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-height: 100vh;
+  margin-top: -20px;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+.footer {
+  scroll-snap-align: none;
+}
+
+code {
+  font-family: "Orbitron", sans-serif;
+}
+.main {
+  height: 90vh;
+}
+.container {
+  background-size: 160%;
+}
+.box {
+  display: flex;
+  background-color: var(--dbg);
+  margin: 50px;
+}
+.poster {
+  padding: 50px;
+}
+.poster img {
+  width: 25vw;
+  height: 70vh;
+}
+.content {
+  padding: 25px;
+  padding-right: 100px;
+}
+.content h3,
+.content h2 {
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+.content p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}

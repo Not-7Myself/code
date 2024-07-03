@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Timeline from "./components/Timeline";
+import Video from "./components/Video";
+import About from "./components/About";
+import EventList from "./components/EventList";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
 
-function App() {
+import "./App.css";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header>
+        <NavBar />
+        <hr />
+        <Hero>
+          <Home />
+        </Hero>
+      </Header>
+      <Timeline />
+      <Video />
+      <About />
+      <EventList />
+      <Footer />
     </div>
   );
 }
 
-export default App;
+function Header({ children }) {
+  const lnk = "images/Ellipse.png";
+
+  return (
+    <div className="header" style={{ backgroundImage: `url(${lnk})` }}>
+      {children}
+    </div>
+  );
+}
