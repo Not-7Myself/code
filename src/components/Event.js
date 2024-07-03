@@ -27,7 +27,6 @@ export default function Event() {
           and answer questions regarding it, on the day of event
         </p>
         <br />
-        {/*<h2>Contact:</h2> */}
         <p className="contact">
           <Discord /> _notmyself / zekernZ &emsp; <Mail />{" "}
           HackAIthon24@gmail.com

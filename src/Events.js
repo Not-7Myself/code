@@ -4,7 +4,7 @@ import Event from "./components/Event";
 import Footer from "./components/Footer";
 
 export default function Events() {
-  const lnk = "images/Ellipse.png";
+  const lnk = "/images/Ellipse.png";
   return (
     <div className="container" style={{ backgroundImage: `url(${lnk})` }}>
       <NavBar />

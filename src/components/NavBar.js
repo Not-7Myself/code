@@ -1,27 +1,26 @@
+import { NavLink } from "react-router-dom";
+
 export default function NavBar() {
-  
   return (
     <ul className="nav">
       <li className="Logo">
-        <img src="images/Logo.png" alt="CODE" />
+        <img src="/images/Logo.png" alt="CODE" />
       </li>
       <li className="navEl">
         <ul>
           <li>
-            <a href="#home" className="active">
-              Home
-            </a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="#team">Team</a>
+            <NavLink to="/Team">Team</NavLink>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <NavLink to="/Contact">Contact</NavLink>
           </li>
         </ul>
       </li>
       <li className="regBtn">
-        <img src="images/Register.png" alt="REGISTER" />
+        <img src="/images/Register.png" alt="REGISTER" />
       </li>
     </ul>
   );
