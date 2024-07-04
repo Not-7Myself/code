@@ -12,23 +12,7 @@ import Team from "./Team";
 import Events from "./Events";
 import Contacts from "./Contact";
 
-const events = [
-  "HackAIthon",
-  "Ad_Making",
-  "Movie Making",
-  "Photography",
-  "Digital_Imaging",
-  "DCrypt",
-  "Keynote",
-  "Group_Discussion",
-  "Robotics",
-  "PyCODE",
-  "CODE++",
-  "Quiz",
-  "Gaming PC",
-  "Music Matrix",
-  "Scratch",
-];
+import { data } from "./data";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -36,8 +20,8 @@ const router = createBrowserRouter(
       <Route path="/" element={<App />} />
       <Route path="Team" element={<Team />} />
       <Route path="Event">
-        {events.map((events) => {
-          return <Route path={events} element={<Events />} />;
+        {data.map((data) => {
+          return <Route path={data.Nome} element={<Events data={data} />} />;
         })}
       </Route>
       <Route path="Contact" element={<Contacts />} />

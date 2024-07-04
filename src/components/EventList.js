@@ -2,6 +2,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { NavLink } from "react-router-dom";
 
+import { data } from "../data";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -11,18 +13,6 @@ import "../App.css";
 
 // import required modules
 import { EffectCoverflow } from "swiper/modules";
-
-const images = [
-  "https://swiperjs.com/demos/images/nature-1.jpg",
-  "https://swiperjs.com/demos/images/nature-2.jpg",
-  "https://swiperjs.com/demos/images/nature-3.jpg",
-  "https://swiperjs.com/demos/images/nature-4.jpg",
-  "https://swiperjs.com/demos/images/nature-5.jpg",
-  "https://swiperjs.com/demos/images/nature-6.jpg",
-  "https://swiperjs.com/demos/images/nature-7.jpg",
-  "https://swiperjs.com/demos/images/nature-8.jpg",
-  "https://swiperjs.com/demos/images/nature-9.jpg",
-];
 
 export default function EventList() {
   return (
@@ -47,10 +37,12 @@ export default function EventList() {
           modules={[EffectCoverflow]}
           className="mySwiper"
         >
-          {images.map((img) => {
+          {data.map((data) => {
             return (
               <SwiperSlide>
-                <img src={img} alt="" />
+                <NavLink to={`Event/${data.Nome}`}>
+                  <img src={data.img} alt={data.Nome} />
+                </NavLink>
               </SwiperSlide>
             );
           })}

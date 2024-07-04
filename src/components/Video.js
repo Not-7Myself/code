@@ -5,7 +5,7 @@ export default function Video() {
         <h1>Teaser</h1>
 
         <video
-          src="images/ishura.mp4"
+          src=""
           controls
           disablePictureInPicture
           controlsList="nodownload"
